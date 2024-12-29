@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "build_tool"
+version = "0.0.2"
+description = "Tool for building and deploying products"
+
+authors = [
+    { name = "lifeforce-dev", email = "lifeforce-dev@gmail.com" }
+]
+
+dependencies = [
+    "pydantic == 2.8.2",
+    "ruff>=0.8.0",
+    "pygame >= >=2.6.1"
+]
+
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 120
+select = ["E", "F", "I"]
+ignore = ["E501"]
+fix = true
+include = ["*.py"]
+extend-exclude = [
+    "__pycache__/",
+    "*.pyc",
+    "*.pyo",
+    ".venv",
+    "dist"
+]
+target-version = "py312"
