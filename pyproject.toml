@@ -3,8 +3,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "build_tool"
-version = "0.0.2"
+name = "Zone Control POC"
+version = "0.0.1"
 description = "Tool for building and deploying products"
 
 authors = [
@@ -14,7 +14,9 @@ authors = [
 dependencies = [
     "pydantic == 2.8.2",
     "ruff>=0.8.0",
-    "pygame >= >=2.6.1"
+    "pygame >= 2.6.1",
+    "PyDispatcher >= 2.0.0",
+    "BloomEffect >= 1.0.0"
 ]
 
 requires-python = ">=3.12"
